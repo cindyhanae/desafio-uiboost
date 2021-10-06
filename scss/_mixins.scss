@@ -1,12 +1,6 @@
-@mixin typo($ff, $weight, $size, $height, $spacing, $color){
-    font-family: $ff;
-    font-weight: $weight;
-    font-size: $size;
-    line-height: $height;
-    letter-spacing: $spacing;
-    color: $color;
-}
-
-@mixin typo-body(){
-
+@mixin flex($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
 }

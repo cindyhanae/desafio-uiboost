@@ -11,5 +11,60 @@ $white: #fff;
 
 // TYPOGRAPHY
 $heading: 'Archivo', sans-serif;
-$body: font-family: 'Inter', sans-serif;
+$body: 'Inter', sans-serif;
+
+h1,
+h2,
+h3,
+h4{
+    font-family: $heading;
+    line-height: 120%;
+}
+
+h2,
+h3,
+h4{
+    font-weight: 600;
+}
+
+h1, 
+h2{
+    letter-spacing: 0.02em;
+}
+
+h1{
+    font-size: 6.4rem;
+    font-weight: 900;
+    color: $white;
+}
+
+h2{
+    font-size: 3.2rem;
+    color: $neutral100;
+}
+
+h3{ 
+    font-size: 2.4rem;
+    color: $neutral200;
+}
+
+h4{
+    font-size: 2rem;
+    color: $neutral200;
+}
+
+p{
+    line-height: 150%;
+}
+
+.border{
+    border: 1px solid $neutral400;
+    opacity: 0.1;
+}
+
+.btn{
+    @include flex(row, center, space-between);
+}
+
+
 
