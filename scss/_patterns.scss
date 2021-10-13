@@ -8,6 +8,7 @@ $neutral300: #27272D;
 $neutral400: #737380;
 $neutral500: #F6F6F9;
 $white: #fff;
+$black: #000;
 
 // TYPOGRAPHY
 $heading: 'Archivo', sans-serif;
@@ -57,13 +58,23 @@ p{
     line-height: 150%;
 }
 
-.border{
-    border: 1px solid $neutral400;
-    opacity: 0.1;
-}
-
 .btn{
     @include flex(row, center, space-between);
+}
+
+.btn-notion{
+    @include flex(row, center, center);
+    gap: 1.5rem;
+    height: 6.4rem;
+    padding: 0 2rem;
+    border-radius: 4px;
+    background-color: $white;
+
+    span{
+        color: $neutral200;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
 }
 
 

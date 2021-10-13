@@ -1,0 +1,41 @@
+// HERO
+.s-hero{
+  padding-top: calc(8.2rem + 8.3rem);
+  background: url(../assets/bg.png);
+}
+
+.hero-left{
+  width: 71.8rem;
+
+  .challenge{
+    font-family: $heading;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 120%;
+    text-transform: uppercase;
+    background: linear-gradient(to top right, #0194FF, #01EADA);
+    -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+    padding-bottom: 2rem;
+  }
+
+  p{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 2rem 0 8.6rem;
+    width: 53.9rem ;
+  }
+}
+
+.squares{
+  display: flex;
+  gap: 1.2rem;
+
+  .square{
+    height: 6.4rem;
+    width: 6.4rem;
+    border: 1px solid red;
+    border-radius: 4px;
+  }
+}
+
