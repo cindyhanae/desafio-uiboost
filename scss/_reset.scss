@@ -9,6 +9,10 @@
     font-family: $body;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body, 
 html{
     width: 100%;
@@ -27,9 +31,3 @@ button{
     background-color: transparent;
 }
 
-.container{
-    width: 100%;
-    max-width: 140.6rem;
-    margin: 0 auto;
-    padding: 0 1.9rem;
-}

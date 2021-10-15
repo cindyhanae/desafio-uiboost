@@ -135,3 +135,84 @@
     width: 100%;
   }
 }
+
+// DESAFIOS
+.s-desafio{
+  position: relative;
+  z-index: 101;
+  margin-top: 10rem;
+
+  h2{
+    text-align: center;
+  }
+}
+
+.desafios{
+  display: flex;
+  justify-content: space-between;
+  gap: 6.2rem;
+  margin: 8.2rem auto 9.7rem;
+  width: 100%;
+  max-width: 118.4rem;
+
+  .box-desafio{
+    width: 100%;
+    max-width: 24.8rem;
+
+    h4{
+      padding: 4rem 0 1.6rem;
+    }
+
+    p{
+      color: $neutral400;
+    }
+
+    a{
+      font-weight: 700;
+      display: block;
+      margin-top: 2.4rem;
+    }
+  }
+}
+
+// PREMIOS
+.s-premios{
+  .container{
+    height: 54.5rem;
+    background: url(../assets/bg-premios.png) no-repeat;
+    background-size: cover;
+    padding: 8.4rem 5.8rem 10.6rem;
+
+    h2{
+      color: $white;
+      width: 100%;
+      max-width: 60.8rem;
+      text-align: center;
+      margin: 0 auto 5.5rem;
+    }
+  }
+}
+
+.premios{
+  display: flex;
+  justify-content: space-between;
+
+  .box-premio{
+    width: 100%;
+    max-width: 28rem;
+    height: 21.1rem;
+    background-color: $neutral300;
+    opacity: 0.8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4{
+      color: $white;
+      margin-top: 3.2rem;
+    }
+
+  }
+}
