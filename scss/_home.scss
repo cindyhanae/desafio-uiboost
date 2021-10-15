@@ -265,19 +265,21 @@
 
 // RESULTADO
 .s-resultado{
-  // border: 1px solid blue;
-  margin: 10.4rem auto 0;
-  padding-bottom: 8rem;
-  border-bottom: 1.5px solid rgba(115, 115, 128, 0.1);
-  @include flex(row, flex-start, none);
-  gap: 13.7rem;
+  // border: 1px solid green;
   width: 100%;
   max-width: 105.1rem;
+  margin: 10.4rem auto;
+}
+
+.concurso{
+  @include flex(row, flex-start, none);
+  gap: 13.7rem;
+  border-bottom: 1.5px solid rgba(115, 115, 128, 0.1);
+  padding-bottom: 8rem;
 
   .resultado{
     width: 100%;
     max-width: 48.7rem;
-    border: 1px solid green;
 
     span{
       font-size: 3.2rem;
@@ -298,10 +300,29 @@
     .time{
       display: flex;
       gap: 2.4rem;
-      
+
       p{
         margin: 0;
       }
     }
   }
 }
+
+.redes{
+  padding: 4.9rem 0 4.5rem;
+  border-bottom: 1.5px solid rgba(115, 115, 128, 0.1);
+  display: flex;
+  gap: 34rem;
+  align-items: center;
+  
+
+  h3,
+  .button{
+    display: inline-block;
+  }
+
+  .btn-notion{
+    background-color: $neutral500;
+  }
+}
+
