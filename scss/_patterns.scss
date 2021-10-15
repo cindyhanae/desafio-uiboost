@@ -61,14 +61,15 @@ p{
 a{
     color: $secondary-color;
     line-height: 150%;
+    transition: all .5s;
 }
 
 .container{
     width: 100%;
-    max-width: 140.6rem;
+    max-width: 124.8rem;
     margin: 0 auto;
     padding: 0 1.9rem;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .btn{
@@ -82,13 +83,23 @@ a{
     padding: 0 2rem;
     border-radius: 4px;
     background-color: $white;
+    transition: all .5s;
 
     span{
         color: $neutral200;
         font-weight: 700;
         font-size: 1.8rem;
     }
+
+    &:hover{
+        background-color: #8accd1;
+    }
 }
+
+.panel{
+    width: 100%;
+    max-width: 49.5rem;
+  }
 
 
 

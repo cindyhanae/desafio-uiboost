@@ -178,6 +178,8 @@
 // PREMIOS
 .s-premios{
   .container{
+    width: 100%;
+    max-width: 136.8rem;
     background: url(../assets/bg-premios.png) no-repeat;
     background-size: cover;
     padding: 8.4rem 5.8rem 10.6rem;
@@ -219,6 +221,9 @@
 
 // PARTICIPAR
 .s-participar{
+  width: 100%;
+  max-width: 130.2rem;
+  margin: 0 auto;
   .container{
     background: url(../assets/bg-purple.png) no-repeat;
     width: 100%;
@@ -265,15 +270,19 @@
 
 // RESULTADO
 .s-resultado{
-  // border: 1px solid green;
   width: 100%;
-  max-width: 105.1rem;
-  margin: 10.4rem auto;
+  max-width: 121.6rem;
+  margin: 10.4rem auto 7.9rem;
+}
+
+.concurso,
+.redes,
+.apoiadores{
+  @include flex(row, center, none);
+  gap: 13.7rem;
 }
 
 .concurso{
-  @include flex(row, flex-start, none);
-  gap: 13.7rem;
   border-bottom: 1.5px solid rgba(115, 115, 128, 0.1);
   padding-bottom: 8rem;
 
@@ -295,6 +304,12 @@
     p{
       color: $neutral400;
       margin: 2.4rem 0rem;
+
+      a{
+        &:hover{
+          color: $primary-color;
+        }
+      }
     }
 
     .time{
@@ -311,9 +326,6 @@
 .redes{
   padding: 4.9rem 0 4.5rem;
   border-bottom: 1.5px solid rgba(115, 115, 128, 0.1);
-  display: flex;
-  gap: 34rem;
-  align-items: center;
   
 
   h3,
@@ -323,6 +335,22 @@
 
   .btn-notion{
     background-color: $neutral500;
+
+    &:hover{
+      background-color: #8accd1;
+    }
   }
 }
 
+.apoiadores{
+  margin-top: 5.6rem;
+}
+
+.organizacao{
+  ul{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 5.4rem;
+  }
+}
