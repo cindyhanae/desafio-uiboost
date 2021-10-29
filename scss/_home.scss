@@ -125,6 +125,7 @@
     left: -24.6rem;
     z-index: 99;
     width: 100vw;
+    animation: cloudHero 7s infinite;
   }
 
   .cloud-back{
@@ -133,6 +134,20 @@
     right: -12rem;
     z-index: 98;
     width: 100%;
+  }
+}
+
+@keyframes cloudHero{
+  0%{
+    transform: translateX(0)
+  }
+
+  50%{
+    transform: translateX(40px)
+  }
+  
+  100%{
+    transform: translateX(0)
   }
 }
 
