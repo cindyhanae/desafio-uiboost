@@ -2,6 +2,7 @@
 .s-hero{
   padding-top: calc(8.2rem + 8.3rem);
   background: url(../assets/bg.png);
+  background-position: top center;
 
   .container{
     display: flex;
@@ -71,6 +72,8 @@
 
   .rocket{
     margin-left: -8.5rem;
+    position: relative;
+    z-index: 1;
   }
 
   .hero-right-txt{
