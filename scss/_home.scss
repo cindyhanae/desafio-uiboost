@@ -127,10 +127,9 @@
 
   .cloud-middle{
     position: absolute;
-    top: -27.8rem;
+    bottom: -34rem;
     left: -24.6rem;
     z-index: 99;
-    width: 100vw;
     animation: cloudHero 6s infinite;
   }
 
@@ -440,18 +439,20 @@
   .hero-right{
     flex-direction: column;
 
-    .rocket{
-      // max-width: 39.6rem;
-    }
+    // .rocket{
+    //   // max-width: 39.6rem;
+    // }
 
     .hero-right-txt{
       position: relative;
+      bottom: 0;
+    
     }
   }
 }
 
 
 // =========MOBILE=========
-@include responsive(600px){
+// @include responsive(600px){
  
-}
+// }
