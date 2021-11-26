@@ -37,19 +37,28 @@ h1{
     font-size: 6.4rem;
     font-weight: 900;
     color: $white;
-    @include responsive(1500px){
+    @include responsive(1300px){
         font-size: 4.8rem;
+    }
+    @include responsive(600px){
+        font-size: 3rem;
     }
 }
 
 h2{
     font-size: 3.2rem;
     color: $neutral100;
+    @include responsive(600px){
+        font-size: 2.4rem;
+    }
 }
 
 h3{ 
     font-size: 2.4rem;
     color: $neutral200;
+    @include responsive(600px){
+        font-size: 2rem;
+    }
 }
 
 h4{
@@ -59,6 +68,9 @@ h4{
 
 p{
     line-height: 150%;
+    @include responsive(600px){
+        font-size: 1.6rem;
+    }
 }
 
 a{

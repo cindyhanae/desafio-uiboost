@@ -1,4 +1,4 @@
-// HERO
+// =========HERO===========
 .s-hero{
   padding-top: calc(8.2rem + 8.3rem);
   background: url(../assets/bg.png);
@@ -115,7 +115,7 @@
 }
 
 
-// CLOUDS
+// =========CLOUDS=========
 .clouds{
   position: relative;
 
@@ -157,7 +157,7 @@
   }
 }
 
-// DESAFIOS
+// =========DESAFIOS=========
 .s-desafio{
   position: relative;
   z-index: 101;
@@ -196,7 +196,7 @@
   }
 }
 
-// PREMIOS
+// =========PREMIOS=========
 .s-premios{
   .container{
     width: 100%;
@@ -240,7 +240,7 @@
   }
 }
 
-// PARTICIPAR
+// =========PARTICIPAR=========
 .s-participar{
   width: 100%;
   max-width: 130.2rem;
@@ -289,7 +289,7 @@
   }
 }
 
-// RESULTADO
+// =========RESULTADO=========
 .s-resultado{
   width: 100%;
   max-width: 121.6rem;
@@ -374,4 +374,84 @@
     align-items: center;
     gap: 5.4rem;
   }
+}
+
+// =========TABLET=========
+// **** HERO ****
+@include responsive(1150px){
+  .s-hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 75%;
+    .container{
+      flex-direction: column;
+    }
+  }
+
+  .hero-left{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .challenge{
+      padding-bottom: 1.6rem;
+    }
+
+    h1{
+      max-width: 62rem;
+    }
+
+    p{
+      padding: 3.2rem 0 5.6rem;
+    }
+  }
+
+  .hero-right{
+    border: 1px solid red;
+    margin-top: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rocket{
+      margin-left: 0;
+    }
+  }
+
+  .squares {
+    &::after{
+      display: none;
+    }
+    & > div {
+      display: none;
+    }
+  }
+}
+
+@include responsive(850px){
+  .hero-left{
+    p{
+      padding: 2.4rem 0 4rem;
+    }
+  }
+
+  .hero-right{
+    flex-direction: column;
+
+    .rocket{
+      // max-width: 39.6rem;
+    }
+
+    .hero-right-txt{
+      position: relative;
+    }
+  }
+}
+
+
+// =========MOBILE=========
+@include responsive(600px){
+ 
 }
