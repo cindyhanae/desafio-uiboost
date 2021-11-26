@@ -10,7 +10,7 @@
 }
 
 .hero-left{
-  width: 71.8rem; 
+  width: 105%; 
 
   .challenge{
     font-family: $heading;
@@ -69,22 +69,26 @@
 
 .hero-right{
   position: relative;
+  width: 100%;
 
   .rocket{
-    margin-left: -8.5rem;
+    margin-left: -16.5rem;
     position: relative;
     z-index: 1;
   }
 
   .hero-right-txt{
+    min-width: 34rem;
     position: absolute;
-    bottom: 33.9rem;
-    right: -10.7rem;
-    width: 100%;
-    max-width: 32rem;
+    top: 30rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
     .hero-right-dates{
       background: linear-gradient(to left, $primary-color, transparent);
+      width: 100%;
       padding: 2rem 3rem 2rem 0rem;
       border-radius: 0 2rem;
 
@@ -105,8 +109,7 @@
       color: $white;
       display: inline-block;
       text-align: right;
-      // width: 100%;
-      // max-width: 25.4rem;
+      max-width: 28rem;
     }
   }
 }
@@ -128,7 +131,7 @@
     left: -24.6rem;
     z-index: 99;
     width: 100vw;
-    animation: cloudHero 7s infinite;
+    animation: cloudHero 6s infinite;
   }
 
   .cloud-back{
