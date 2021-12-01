@@ -85,6 +85,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    display: none;
 
     .hero-right-dates{
       background: linear-gradient(to left, $primary-color, transparent);
@@ -431,6 +432,10 @@ section.s-desafio{
 }
 
 @include responsive(850px){
+  .s-hero{
+    background-position-x: 69%;
+  }
+
   .hero-left{
     p{
       padding: 2.4rem 0 4rem;
@@ -440,14 +445,30 @@ section.s-desafio{
   .hero-right{
     flex-direction: column;
 
-    // .rocket{
-    //   // max-width: 39.6rem;
-    // }
-
     .hero-right-txt{
       position: relative;
       bottom: 0;
     
+    }
+  }
+
+  .clouds{
+    .cloud-front,
+    .cloud-middle,
+    .cloud-back{
+      top: -18rem;
+      border: 1px solid red;
+    }
+  }
+}
+
+@include responsive(600px){
+  .clouds{
+    .cloud-front,
+    .cloud-middle,
+    .cloud-back{
+      top: -9rem;
+      border: 1px solid red;
     }
   }
 }
