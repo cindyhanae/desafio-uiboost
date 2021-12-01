@@ -118,25 +118,27 @@
 // =========CLOUDS=========
 .clouds{
   position: relative;
+  width: 100%;
+  
 
   .cloud-front{
     position: absolute;
     z-index: 100;
     top: -28.4rem;
+    width: 100%;
   }
 
   .cloud-middle{
     position: absolute;
-    bottom: -34rem;
-    left: -24.6rem;
+    top: -28.4rem;
     z-index: 99;
+    width: 100%;
     animation: cloudHero 6s infinite;
   }
 
   .cloud-back{
     position: absolute;
-    top: -24.5rem;
-    right: -12rem;
+    top: -28.4rem;
     z-index: 98;
     width: 100%;
   }
@@ -148,7 +150,7 @@
   }
 
   50%{
-    transform: translateX(40px)
+    transform: translateX(-40px)
   }
   
   100%{
@@ -157,14 +159,14 @@
 }
 
 // =========DESAFIOS=========
-.s-desafio{
+section.s-desafio{
   position: relative;
-  z-index: 101;
+  z-index: 200;
   margin-top: 10rem;
 
-  h2{
-    text-align: center;
-  }
+    h2{
+      text-align: center;
+    }
 }
 
 .desafios{
@@ -408,7 +410,6 @@
   }
 
   .hero-right{
-    border: 1px solid red;
     margin-top: 7.5rem;
     display: flex;
     justify-content: center;
