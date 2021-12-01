@@ -70,7 +70,6 @@
 .hero-right{
   position: relative;
   width: 100%;
-  border: 1px solid red;
 
   .rocket{
     margin-left: -16.5rem;
@@ -175,6 +174,7 @@ section.s-desafio{
   margin: 8.2rem auto 9.7rem;
   width: 100%;
   max-width: 118.4rem;
+  border: 1px solid blue;
 
   .box-desafio{
     width: 100%;
@@ -430,6 +430,7 @@ section.s-desafio{
 }
 
 @include responsive(850px){
+  // **** HERO ****
   .s-hero{
     background-position-x: 69%;
   }
@@ -474,6 +475,19 @@ section.s-desafio{
     .cloud-middle,
     .cloud-back{
       top: -18rem;
+    }
+  }
+
+  // **** DESAFIO ****
+  .desafios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+    
+
+    .box-desafio{
+      border: 1px solid red;
+      margin-inline: auto;
     }
   }
 }
