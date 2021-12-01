@@ -70,6 +70,7 @@
 .hero-right{
   position: relative;
   width: 100%;
+  border: 1px solid red;
 
   .rocket{
     margin-left: -16.5rem;
@@ -85,7 +86,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    display: none;
 
     .hero-right-dates{
       background: linear-gradient(to left, $primary-color, transparent);
@@ -121,27 +121,25 @@
   position: relative;
   width: 100%;
   
-
-  .cloud-front{
+  .cloud-front,
+  .cloud-middle,
+  .cloud-back{
     position: absolute;
-    z-index: 100;
     top: -28.4rem;
     width: 100%;
   }
 
+  .cloud-front{
+    z-index: 100;
+  }
+
   .cloud-middle{
-    position: absolute;
-    top: -28.4rem;
     z-index: 99;
-    width: 100%;
     animation: cloudHero 6s infinite;
   }
 
   .cloud-back{
-    position: absolute;
-    top: -28.4rem;
     z-index: 98;
-    width: 100%;
   }
 }
 
@@ -447,8 +445,27 @@ section.s-desafio{
 
     .hero-right-txt{
       position: relative;
-      bottom: 0;
-    
+      top: -13rem;
+      margin-inline: auto;
+
+      p{
+          text-align: center;
+          margin-inline: auto;
+      }
+
+      img{
+        margin-inline: auto;
+      }
+
+      .hero-right-dates{
+        background: none;
+        border: 1px solid red;
+        padding-right: 0;
+        h3{
+          text-align: center;
+          margin-inline: auto;
+        }
+      }
     }
   }
 
@@ -457,7 +474,6 @@ section.s-desafio{
     .cloud-middle,
     .cloud-back{
       top: -18rem;
-      border: 1px solid red;
     }
   }
 }
@@ -468,7 +484,6 @@ section.s-desafio{
     .cloud-middle,
     .cloud-back{
       top: -9rem;
-      border: 1px solid red;
     }
   }
 }
