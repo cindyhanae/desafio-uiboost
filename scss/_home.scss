@@ -179,6 +179,7 @@ section.s-desafio{
   .box-desafio{
     width: 100%;
     max-width: 24.8rem;
+    border: 1px solid red;
 
     h4{
       padding: 4rem 0 1.6rem;
@@ -486,8 +487,12 @@ section.s-desafio{
     
 
     .box-desafio{
-      border: 1px solid red;
       margin-inline: auto;
+      text-align: center;
+
+      img{
+        margin-inline: auto;
+      }
     }
   }
 }
@@ -499,6 +504,13 @@ section.s-desafio{
     .cloud-back{
       top: -9rem;
     }
+  }
+
+  // **** DESAFIO ****
+  .desafios{
+    grid-template-columns: 1fr;
+    grid-gap: 5.6rem;
+    margin: 5.6rem auto 7.2rem;
   }
 }
 
