@@ -174,12 +174,10 @@ section.s-desafio{
   margin: 8.2rem auto 9.7rem;
   width: 100%;
   max-width: 118.4rem;
-  border: 1px solid blue;
 
   .box-desafio{
     width: 100%;
     max-width: 24.8rem;
-    border: 1px solid red;
 
     h4{
       padding: 4rem 0 1.6rem;
@@ -199,12 +197,15 @@ section.s-desafio{
 
 // =========PREMIOS=========
 .s-premios{
+  padding: 0 1.6rem;
+
   .container{
     width: 100%;
     max-width: 136.8rem;
     background: url(../assets/bg-premios.png) no-repeat;
     background-size: cover;
     padding: 8.4rem 5.8rem 10.6rem;
+    margin-inline: auto;
     border-radius: 2.5rem;
 
     h2{
@@ -220,6 +221,7 @@ section.s-desafio{
 .premios{
   display: flex;
   justify-content: space-between;
+  gap: 3rem;
 
   .box-premio{
     width: 100%;
