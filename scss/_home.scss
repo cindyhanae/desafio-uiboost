@@ -226,7 +226,8 @@ section.s-desafio{
   .box-premio{
     width: 100%;
     max-width: 28rem;
-    height: 21.1rem;
+    // height: 21.1rem;
+    padding: 5.4rem 3rem 4.6rem;
     background-color: $neutral300;
     opacity: 0.8;
     border-radius: 8px;
@@ -234,10 +235,11 @@ section.s-desafio{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     h4{
       color: $white;
       margin-top: 3.2rem;
+      text-align: center;
     }
 
   }
@@ -380,8 +382,8 @@ section.s-desafio{
 }
 
 // =========TABLET=========
-// **** HERO ****
 @include responsive(1150px){
+  // **** HERO ****
   .s-hero{
     background-repeat: no-repeat;
     background-size: cover;
@@ -428,6 +430,18 @@ section.s-desafio{
     }
     & > div {
       display: none;
+    }
+  }
+
+  // **** PREMIOS ****
+  .premios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.4rem;
+    border: 1px solid red;
+
+    .box-premio{
+      margin-inline: auto;
     }
   }
 }
@@ -496,6 +510,13 @@ section.s-desafio{
         margin-inline: auto;
       }
     }
+  }
+}
+
+@include responsive(700px){
+  // **** PREMIOS ****
+  .premios{
+    grid-template-columns: 1fr;
   }
 }
 
