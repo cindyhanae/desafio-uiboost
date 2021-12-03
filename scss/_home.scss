@@ -307,12 +307,13 @@ section.s-desafio{
   width: 100%;
   max-width: 121.6rem;
   margin: 10.4rem auto 7.9rem;
+  border: 1px solid red;
 }
 
 .concurso,
 .redes,
 .apoiadores{
-  @include flex(row, center, none);
+  display: flex;
   gap: 13.7rem;
 }
 
@@ -360,7 +361,7 @@ section.s-desafio{
 .redes{
   padding: 4.9rem 0 4.5rem;
   border-bottom: 1.5px solid rgba(115, 115, 128, 0.1);
-  
+  align-items: center;
 
   h3,
   .button{
@@ -562,6 +563,26 @@ section.s-desafio{
       }
     }
   }
+
+  // **** RESULTADO ****
+  .s-resultado{
+    margin-top: 9.6rem;
+  }
+
+  .concurso{
+    flex-direction: column;
+    align-items: center;
+    gap: 6.4rem;
+    padding-bottom: 9.6rem;
+
+    .resultado{
+      @include flex(column, center, center);
+
+      p{
+        text-align: center;
+      }
+    }
+  }
 }
 
 @include responsive(700px){
@@ -631,6 +652,20 @@ section.s-desafio{
         padding-left: 1.6rem;
         padding-top: 0;
         text-align: left;
+      }
+    }
+  }
+
+  // **** RESULTADO ****
+  .s-resultado{
+    margin-top: 7.2rem;
+  }
+  .concurso{
+    padding-bottom: 7.1rem;
+
+    .resultado{
+      p{
+        margin: 2rem 0rem 1.7rem;
       }
     }
   }
