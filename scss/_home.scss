@@ -595,6 +595,18 @@ section.s-desafio{
       justify-content: center;
     }
   }
+
+  .apoiadores{
+    margin-top: 7.1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.4rem;
+  }
+
+  .organizacao{
+    text-align: center;
+    
+  }
 }
 
 @include responsive(700px){
@@ -684,5 +696,18 @@ section.s-desafio{
 
   .redes{
     gap: 2.1rem;
+  }
+
+  .apoiadores{
+    margin-top: 5.6rem;
+  }
+
+  .organizacao{
+    ul{
+      margin-top: 3.8rem;
+      display: flex;
+      flex-direction: column;
+    }
+
   }
 }
