@@ -359,7 +359,7 @@ section.s-desafio{
 }
 
 .redes{
-  padding: 4.9rem 0 4.5rem;
+  padding: 4.9rem 0;
   border-bottom: 1.5px solid rgba(115, 115, 128, 0.1);
   align-items: center;
 
@@ -583,6 +583,18 @@ section.s-desafio{
       }
     }
   }
+
+  .redes{
+    padding: 6.4rem 0;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    h3,
+    .button{
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 @include responsive(700px){
@@ -668,5 +680,9 @@ section.s-desafio{
         margin: 2rem 0rem 1.7rem;
       }
     }
+  }
+
+  .redes{
+    gap: 2.1rem;
   }
 }
