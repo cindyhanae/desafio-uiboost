@@ -24,11 +24,17 @@
     padding-bottom: 2rem;
   }
 
+  h1{
+    width: 100%;
+    max-width: 71.8rem;
+  }
+
   p{
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.7);
     padding: 2rem 0 8.6rem;
-    width: 53.9rem ;
+    width: 100%;
+    max-width: 53.9rem ;
   }
 }
 
@@ -608,6 +614,14 @@ section.s-desafio{
 }
 
 @include responsive(700px){
+  // **** HERO ****
+  .hero-left{
+    p{
+      font-size: 1.7rem;
+
+    }
+  }
+
   // **** PREMIOS ****
   .s-premios{
     .container{

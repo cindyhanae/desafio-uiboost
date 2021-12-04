@@ -25,3 +25,11 @@ nav{
     }
   }
 }
+
+@include responsive(600px){
+  .header-social{
+    a{
+      display: none;
+    }
+  }
+}
